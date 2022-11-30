@@ -2,9 +2,9 @@
 #include<stdlib.h>
 #include<time.h>
 
-void juft_toq(int a[],int *toq,int  *juft){
+void juft_toq(int a[],int b,int *toq,int  *juft){
 
-	for(int i=0; i<5; i++){
+	for(int i=0; i<b; i++){
 		if(a[i]%2==0){
 
 			*juft=i;
@@ -12,7 +12,7 @@ void juft_toq(int a[],int *toq,int  *juft){
 		}
 	}
 
-	for(int i=0; i<5;i++){
+	for(int i=0; i<b;i++){
 		if(a[i]%2==1){
 			*toq=i;
 			break;
@@ -38,7 +38,7 @@ int main(){
     puts("");
 	int toq, juft;
 
-	juft_toq(b,&toq,&toq);
+	juft_toq(b,a,&toq,&toq);
 
 
 	printf("Toq index= %d\n Juft index =%d \n",toq, juft);
