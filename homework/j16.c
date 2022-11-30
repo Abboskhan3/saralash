@@ -15,8 +15,6 @@ void korsat(int a[], int b){
 puts("");
 }
 
-
-
 void manfiy(int a[],int b){
 
 	int sum=0;
@@ -34,10 +32,6 @@ puts("");
 
 }
 
-
-
-
-
 int main(){
 
 	srand(time(0));
@@ -53,8 +47,6 @@ int main(){
 	korsat (a,b);
 
 	manfiy(a,b);
-
-
 
 
 	return 0;
